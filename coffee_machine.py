@@ -8,13 +8,15 @@ class CoffeeMachine:
     amount_of_coffe_grains: int = 0
 
     def __init__(self, amount_of_coffe_grains: int = 0):
-        pass
+        self.amount_of_coffe_grains = amount_of_coffe_grains
 
     def get_coffee(self):
-        pass
+        self.amount_of_coffe_grains -= 1
+
+        return 1
 
     def has_coffe_grains(self):
-        pass
+        return False if self.amount_of_coffe_grains <= 0 else True
 
     def length(self):
-        pass
+        return self.amount_of_coffe_grains
