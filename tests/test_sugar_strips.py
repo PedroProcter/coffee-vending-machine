@@ -3,7 +3,7 @@ from sugar_strips import SugarStrips
 
 
 def test_return_not_sugar_strips_left():
-    sugar_strips = SugarStrips(5)
+    sugar_strips = SugarStrips(0)
 
     assert not sugar_strips.has_sugar_strip()
 
