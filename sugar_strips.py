@@ -16,7 +16,7 @@ class SugarStrips:
 
     def has_sugar_strip(self):
         
-        return (self.amount_of_strips <= 0)
+        return (self.amount_of_strips > 0)
 
     def length(self):
         return self.amount_of_strips
